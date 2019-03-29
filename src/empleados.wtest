@@ -10,3 +10,17 @@ test "sueldo de Baigorria y de Gimenez" {
 	gimenez.sueldo(12000)
 	assert.equals(12000, gimenez.sueldo())
 }
+
+test "sueldo baigorria" {
+	baigorria.venderEmpanada()
+	baigorria.venderEmpanada()
+	assert.equals(1530, baigorria.sueldo())
+	baigorria.venderEmpanada()
+	assert.equals(1545, baigorria.sueldo())
+}
+
+test "sueldo Gimenez" {
+	gimenez.sueldo(12000)
+	assert.equals(12000, gimenez.sueldo())
+// sueldo() debe retornar sueldo, no 15000
+}
