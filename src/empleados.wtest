@@ -21,6 +21,14 @@ test "sueldo baigorria" {
 
 test "sueldo Gimenez" {
 	gimenez.sueldo(12000)
-	assert.equals(12000, gimenez.sueldo())
-// sueldo() debe retornar sueldo, no 15000
+	assert.equals(12000, gimenez.sueldo()) // sueldo() debe retornar sueldo, no 15000
+
 }
+
+test "galvan le paga a baigorria" {
+	baigorria.venderEmpanada()
+	baigorria.venderEmpanada()
+	baigorria.venderEmpanada()
+	galvan.pagarA(baigorria)
+	assert.equals((300000-1545), galvan.dinero())
+} 

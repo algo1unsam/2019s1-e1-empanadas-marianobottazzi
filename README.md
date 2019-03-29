@@ -47,7 +47,11 @@ mensaje `totalCobrado()`. Giménez no hace nada.
 ## Manejo fino de las finanzas de Giménez
 
 Modificar el comportamiento de Giménez para que maneje sus gastos, el dinero que tiene, 
-y su deuda. Cuando Giménez gasta, se descuenta de su dinero, si no le alcanza aumenta la deuda. Cuando cobra un sueldo, Giménez paga sus deudas. Si sobra algo, se suma al dinero que tiene. Agregar a Giménez la capacidad de entender los mensajes: `gastar(cuanto)`, `totalDeuda()`, `totalDinero()`. 
+y su deuda. Cuando Giménez gasta, se descuenta de su dinero, si no le alcanza aumenta 
+la deuda. 
+Cuando cobra un sueldo, Giménez paga sus deudas. Si sobra algo, se suma al dinero que 
+tiene. Agregar a Giménez la capacidad de entender los mensajes: `gastar(cuanto)`, 
+`totalDeuda()`, `totalDinero()`. 
 
 Tener en cuenta este escenario
 1. Giménez arranca con 15000 de sueldo, deuda en 0, dinero en 0.
