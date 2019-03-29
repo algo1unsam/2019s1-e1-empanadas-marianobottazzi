@@ -32,3 +32,18 @@ test "galvan le paga a baigorria" {
 	galvan.pagarA(baigorria)
 	assert.equals((300000-1545), galvan.dinero())
 } 
+
+test "finanzas de gimenez" {
+	gimenez.totalDeuda()	// gasta 4000
+	gimenez.totalDeuda()	// gasta 8000
+	gimenez.cobraSueldo()		// cobra 15000
+	gimenez.totalDeuda(0  		// salda la deuda
+	gimenez.totalDinero()		// le sobran 3000
+	gimenez.totalDinero()		// gasta 25000
+	gimenez.totalDeuda()
+	gimenez.totalDeuda()		// cobra 15000
+	
+	
+	
+	
+}

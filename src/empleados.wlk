@@ -6,19 +6,31 @@ object gimenez {
 	// var property sueldo = 15000
 	
 	var sueldo = 15000
-
+	var sueldoCobrado
+	var dinero = 0
+	var deuda = 0
+	
 	method sueldo() {
-		return sueldo // antes decia 15000
+		return sueldo	// antes decia 15000
 	}
 
 	method sueldo(nuevoValor) {
 		sueldo = nuevoValor
 	}
 
+	method cobrarSueldo() {
+		sueldoCobrado += self.sueldo()	
+	}
+	
+	method totalDeuda() {
+		
+	}
+
 }
 
 object baigorria {
 
+	var total
 	var cantidadEmpanadasVendidas = 100
 	var montoPorEmpanada = 15
 
@@ -27,12 +39,21 @@ object baigorria {
 	}
 
 	method sueldo() {
-		return cantidadEmpanadasVendidas * montoPorEmpanada
-		
+		return cantidadEmpanadasVendidas * montoPorEmpanada	
 	}
+	
+	method cobrarSueldo() {
+		dinero += self.sueldo()	
+	}
+
+	method totalDinero() {
+		return dinero 
+	}
+
 	
 	method totalCobrado() {
 		total += self.sueldo()
+		return total
 	}
 }
 
