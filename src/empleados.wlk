@@ -25,12 +25,12 @@ object gimenez {
 	}
 	
 	method totalDeuda() {
-		if(dinero>0) return 0
+		if(dinero > 0) return 0
 		else return dinero.abs()
 	}
 	
 	method totalDinero(){
-		if(dinero<0) return 0
+		if(dinero < 0) return 0
 		else return dinero
 	}
 
