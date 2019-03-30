@@ -6,8 +6,6 @@ object gimenez {
 	// var property sueldo = 15000
 	
 	var sueldo = 15000
-	var sueldoCobrado
-	var deuda = 0
 	var dinero = 0
 	
 	method sueldo() {
@@ -19,17 +17,21 @@ object gimenez {
 	}
 
 	method cobrarSueldo() {
-		dinero = self.sueldo()	
+		dinero += self.sueldo()	
 	}
 	
-	method totalDeuda(_monto) {
+	method gastar(_monto) {
 		dinero -= _monto
-		if(dinero > 0) return 0
-		else return dinero 
 	}
 	
-	method totalDInero() {
-		return dinero	
+	method totalDeuda() {
+		if(dinero>0) return 0
+		else return dinero.abs()
+	}
+	
+	method totalDinero(){
+		if(dinero<0) return 0
+		else return dinero
 	}
 
 }
