@@ -59,9 +59,7 @@ object galvan {
 
 	var dinero = 300000
 
-	method dinero() {
-		return dinero
-	}
+	method dinero() = dinero
 
 	method pagarA(empleado) {
 		dinero -= empleado.sueldo()
