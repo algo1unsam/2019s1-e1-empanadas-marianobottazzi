@@ -4,12 +4,11 @@ object gimenez {
 	// le agrega al objeto: un atributo, el método para acceder, y el método para 
 	// modificar.
 	// var property sueldo = 15000
-	
 	var sueldo = 15000
 	var dinero = 0
-	
+
 	method sueldo() {
-		return sueldo	// antes decia 15000
+		return sueldo // antes decia 15000
 	}
 
 	method sueldo(nuevoValor) {
@@ -17,28 +16,26 @@ object gimenez {
 	}
 
 	method cobrarSueldo() {
-		dinero += self.sueldo()	
+		dinero += self.sueldo()
 	}
-	
+
 	method gastar(_monto) {
 		dinero -= _monto
 	}
-	
+
 	method totalDeuda() {
-		if(dinero > 0) return 0
-		else return dinero.abs()
+		if (dinero > 0) return 0 else return dinero.abs()
 	}
-	
-	method totalDinero(){
-		if(dinero < 0) return 0
-		else return dinero
+
+	method totalDinero() {
+		if (dinero < 0) return 0 else return dinero
 	}
 
 }
 
 object baigorria {
 
-	var total
+	var total = 0
 	var cantidadEmpanadasVendidas = 100
 	var montoPorEmpanada = 15
 
@@ -47,22 +44,15 @@ object baigorria {
 	}
 
 	method sueldo() {
-		return cantidadEmpanadasVendidas * montoPorEmpanada	
+		return cantidadEmpanadasVendidas * montoPorEmpanada
 	}
-	
+
 	method cobrarSueldo() {
-		dinero += self.sueldo()	
-	}
-
-	method totalDinero() {
-		return dinero 
-	}
-
-	
-	method totalCobrado() {
 		total += self.sueldo()
-		return total
 	}
+
+	method totalCobrado() = total
+
 }
 
 object galvan {
